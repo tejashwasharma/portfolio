@@ -1,0 +1,108 @@
+.role {
+  margin-bottom: 2.75rem;
+}
+
+.role:last-child {
+  margin-bottom: 0;
+}
+
+.head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1rem;
+  align-items: baseline;
+  padding: 0.7rem 0.9rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: 2px;
+}
+
+.company {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.location {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+}
+
+.period {
+  margin-left: auto;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--color-muted);
+}
+
+.titles {
+  display: grid;
+  gap: 0.15rem;
+  margin: 0.85rem 0 0;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--color-muted);
+}
+
+.titles b {
+  color: var(--color-ink);
+  font-weight: 600;
+}
+
+.groupHeading {
+  margin: 1.6rem 0 0;
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-accent);
+}
+
+.bullets {
+  margin: 0.7rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.bullets li {
+  position: relative;
+  padding-left: 1.25rem;
+  max-width: 66ch;
+}
+
+.bullets li::before {
+  content: '\25B9';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+}
+
+.bullets strong {
+  font-weight: 600;
+}
+
+.awards {
+  margin: 1.15rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.3rem;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--color-muted);
+}
+
+.awards li {
+  position: relative;
+  padding-left: 1.3rem;
+}
+
+.awards li::before {
+  content: '\2713';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+}

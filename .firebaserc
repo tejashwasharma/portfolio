@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "tejashwasharma-ae995"
+  },
+  "targets": {
+    "tejashwasharma-ae995": {
+      "hosting": {
+        "portfolio": [
+          "tejashwasharma"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

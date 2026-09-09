@@ -1,0 +1,138 @@
+/**
+ * Contact band. The full, uncropped summit-pose photo runs at the section's
+ * full width (an <img>, so the image itself sets the section height). The copy
+ * is overlaid on the upper region with a top-down scrim for legibility; the
+ * figure sits lower in the frame and stays clear.
+ */
+
+.contact {
+  position: relative;
+  isolation: isolate;
+  max-width: var(--layout-max);
+  margin: 0 auto;
+  height: 530px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border-top: 1px solid var(--color-line);
+  background: #0c0e0f;
+  overflow: hidden;
+  scroll-margin-top: var(--header-height);
+}
+
+/* Full-width photo, bottom-anchored inside the fixed-height band so the figure
+   stays in view while the empty upper sky is clipped by `overflow: hidden`. */
+.photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(10, 12, 13, 0.9) 0%,
+    rgba(10, 12, 13, 0.6) 24%,
+    rgba(10, 12, 13, 0.36) 46%,
+    rgba(10, 12, 13, 0.3) 70%,
+    rgba(10, 12, 13, 0.68) 100%
+  );
+}
+
+.body {
+  position: absolute;
+  inset: 0 0 auto 0;
+  padding: 3.5rem var(--layout-pad-inline) 2rem;
+}
+
+.eyebrow {
+  display: block;
+  margin-bottom: 0.9rem;
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: #9bd9c7;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+  margin: 0 0 1rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.6rem, 3.4vw, 2.1rem);
+  color: #ffffff;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.lead {
+  max-width: 46ch;
+  margin: 0 0 1.4rem;
+  color: #e4e0d6;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.6rem;
+  margin-bottom: 1.3rem;
+}
+
+/* Hollow on the photo; fills with accent on hover. */
+.email {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.72rem 1.15rem;
+  border-radius: 3px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  text-decoration: none;
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  transition:
+    background 0.15s var(--ease-out),
+    color 0.15s var(--ease-out),
+    border-color 0.15s var(--ease-out);
+}
+
+.email:hover {
+  background: var(--color-accent);
+  color: var(--color-cta-ink);
+  border-color: var(--color-accent);
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-family: var(--font-mono);
+  font-size: 0.84rem;
+  color: #ece8de;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.65);
+}
+
+.links a,
+.links span {
+  width: fit-content;
+  text-decoration: none;
+}
+
+.links a:hover {
+  color: #9bd9c7;
+}
+
+@media (max-width: 600px) {
+  .contact {
+    height: 420px;
+  }
+
+  .body {
+    padding: 2.5rem 1.25rem 1.5rem;
+  }
+}

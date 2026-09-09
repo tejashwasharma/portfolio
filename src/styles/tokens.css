@@ -1,0 +1,77 @@
+/**
+ * Design tokens.
+ *
+ * Three theme states are supported:
+ *  - system (no attribute on <html>): only prefers-color-scheme decides
+ *  - explicit light: <html data-theme="light">
+ *  - explicit dark:  <html data-theme="dark">
+ *
+ * Every token is declared on bare :root (the complete light palette) first,
+ * then re-declared for the two dark cases. Components must only read tokens,
+ * never hard-code a colour that would break in the other theme.
+ */
+
+:root {
+  /* palette */
+  --color-ground: #f3f1ec;
+  --color-surface: #faf9f6;
+  --color-ink: #1b1a17;
+  --color-muted: #6b6660;
+  --color-line: #dad6cc;
+  --color-accent: #1f6f5c;
+  --color-accent-soft: #e4ece8;
+  --color-cta-ink: #ffffff;
+
+  /* code / mono panel accents */
+  --color-code-key: #8a5a2b;
+  --color-code-str: #1f6f5c;
+  --color-code-num: #3d5a99;
+
+  /* elevation */
+  --shadow-card: 0 1px 2px rgba(27, 26, 23, 0.05), 0 14px 34px -18px rgba(27, 26, 23, 0.18);
+
+  /* typography */
+  --font-display: 'Bricolage Grotesque', 'Segoe UI', system-ui, sans-serif;
+  --font-body: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+
+  /* layout */
+  --layout-max: 1060px;
+  --layout-pad-inline: 1.5rem;
+  --header-height: 4.5rem;
+
+  /* motion */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --color-ground: #141618;
+    --color-surface: #1c1f21;
+    --color-ink: #e9e6df;
+    --color-muted: #948e84;
+    --color-line: #2c2f32;
+    --color-accent: #57bd9f;
+    --color-accent-soft: #16332c;
+    --color-cta-ink: #0c211c;
+    --color-code-key: #d19a5e;
+    --color-code-str: #82ccb5;
+    --color-code-num: #93abda;
+    --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.3), 0 16px 40px -18px rgba(0, 0, 0, 0.6);
+  }
+}
+
+:root[data-theme='dark'] {
+  --color-ground: #141618;
+  --color-surface: #1c1f21;
+  --color-ink: #e9e6df;
+  --color-muted: #948e84;
+  --color-line: #2c2f32;
+  --color-accent: #57bd9f;
+  --color-accent-soft: #16332c;
+  --color-cta-ink: #0c211c;
+  --color-code-key: #d19a5e;
+  --color-code-str: #82ccb5;
+  --color-code-num: #93abda;
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.3), 0 16px 40px -18px rgba(0, 0, 0, 0.6);
+}
