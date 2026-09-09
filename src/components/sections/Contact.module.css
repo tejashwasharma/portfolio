@@ -87,10 +87,11 @@
 .email {
   display: inline-flex;
   align-items: center;
-  padding: 0.72rem 1.15rem;
+  padding: 0.5rem 0.95rem;
   border-radius: 3px;
   font-family: var(--font-display);
   font-weight: 600;
+  font-size: 0.82rem;
   text-decoration: none;
   background: transparent;
   color: #ffffff;
@@ -153,10 +154,5 @@
   /* Résumé download is already in the sticky header on mobile. */
   .resumeCta {
     display: none;
-  }
-
-  .email {
-    padding: 0.5rem 0.9rem;
-    font-size: 0.9rem;
   }
 }

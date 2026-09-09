@@ -26,7 +26,7 @@ export function Contact() {
           </a>
           {/* Redundant with the sticky header on small screens — hidden there via CSS. */}
           <span className={styles.resumeCta}>
-            <ResumeDownloadButton variant="prominent" tone="hollow" />
+            <ResumeDownloadButton variant="compact" tone="hollow" />
           </span>
         </div>
 
