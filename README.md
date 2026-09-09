@@ -23,6 +23,7 @@ npm run dev        # http://localhost:5173
 | `npm run preview` | Serve the production build locally             |
 | `npm run lint`    | ESLint (React + hooks rules)                   |
 | `npm run format`  | Prettier write over `src/`                     |
+| `npm run deploy`  | Build, then `firebase deploy --only hosting`   |
 
 ## Project structure
 
