@@ -6,6 +6,6 @@ export const navItems = [
   { id: 'skills', label: 'skills' },
   { id: 'work', label: 'work' },
   { id: 'interests', label: 'interests' },
-  { id: 'credentials', label: 'credentials' },
+  { id: 'credentials', label: 'education' },
   { id: 'contact', label: 'contact' },
 ];
