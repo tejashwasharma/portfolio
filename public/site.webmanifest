@@ -1,0 +1,16 @@
+{
+  "name": "Tejashwa Sharma — Senior Software Engineer",
+  "short_name": "Tejashwa Sharma",
+  "description": "Portfolio of Tejashwa Sharma, Senior Software Engineer specialising in backend, platform engineering, and identity & access management.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#141618",
+  "theme_color": "#141618",
+  "icons": [
+    { "src": "/favicon.svg", "type": "image/svg+xml", "sizes": "any", "purpose": "any" },
+    { "src": "/icon-192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "/icon-512.png", "type": "image/png", "sizes": "512x512" },
+    { "src": "/apple-touch-icon.png", "type": "image/png", "sizes": "180x180", "purpose": "maskable" }
+  ]
+}
