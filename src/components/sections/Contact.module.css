@@ -128,11 +128,35 @@
 }
 
 @media (max-width: 600px) {
+  /* Let the band grow with its content instead of clipping it: the photo
+     becomes a cover background and the copy flows normally on top. */
   .contact {
-    height: 420px;
+    height: auto;
+    min-height: 360px;
+    display: block;
+  }
+
+  .photo {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 22%;
   }
 
   .body {
-    padding: 2.5rem 1.25rem 1.5rem;
+    position: relative;
+    z-index: 1;
+    padding: 2.5rem 1.25rem 2.25rem;
+  }
+
+  /* Résumé download is already in the sticky header on mobile. */
+  .resumeCta {
+    display: none;
+  }
+
+  .email {
+    padding: 0.5rem 0.9rem;
+    font-size: 0.9rem;
   }
 }

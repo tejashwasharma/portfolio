@@ -55,8 +55,19 @@
   }
 }
 
-@media (max-width: 480px) {
-  .actions .compactLabelHidden {
+/* Phones: the wordmark + both buttons overflow the bar, so drop the wordmark
+   and pin the résumé button and theme toggle to opposite edges. */
+@media (max-width: 560px) {
+  .bar {
+    gap: 0.5rem;
+  }
+
+  .brand {
     display: none;
+  }
+
+  .actions {
+    flex: 1;
+    justify-content: space-between;
   }
 }

@@ -24,7 +24,10 @@ export function Contact() {
           <a className={styles.email} href="mailto:tejsharma407@gmail.com">
             tejsharma407@gmail.com
           </a>
-          <ResumeDownloadButton variant="prominent" tone="hollow" />
+          {/* Redundant with the sticky header on small screens — hidden there via CSS. */}
+          <span className={styles.resumeCta}>
+            <ResumeDownloadButton variant="prominent" tone="hollow" />
+          </span>
         </div>
 
         <div className={styles.links}>
