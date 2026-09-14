@@ -35,6 +35,8 @@ export const skillGroups = [
       'Protobuf',
       'Socket.io',
       'Microservices',
+      'Kafka',
+      'RabbitMQ',
     ],
   },
   {
