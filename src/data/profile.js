@@ -60,7 +60,7 @@ export const summary = {
     },
     {
       title: 'AI-augmented engineering',
-      body: 'Claude Code, GPT, and GitHub Copilot across the SDLC for development velocity, code quality, testing, debugging, RCA, and security analysis; contributed to 2–3× PR throughput and 85%+ test coverage, alongside React.js, TypeScript, CI/CD, Docker, and Jenkins.',
+      body: 'Claude Code, GPT, and GitHub Copilot across the SDLC for development velocity, code quality, testing, debugging, RCA, and security analysis; built a RAG-based Slack support bot answering auth/RBAC/SSO questions, live with the internal support team; contributed to 2–3× PR throughput and 85%+ test coverage, alongside React.js, TypeScript, CI/CD, Docker, and Jenkins.',
     },
   ],
   closing:

@@ -26,6 +26,13 @@ export const experience = [
         ],
       },
       {
+        heading: 'Cross-Team & Technical Leadership',
+        bullets: [
+          'Guided a new team member and junior engineers on the team\'s core stack — SSO, SCIM, OAuth 2.0, and Rego — through pairing sessions and design walkthroughs.',
+          'Advised other product teams on **Rego policy design and RBAC adoption**, reviewing policies and unblocking rollout beyond the team\'s own scope.',
+        ],
+      },
+      {
         heading: 'Session Governance & Security',
         bullets: [
           'Launched a self-service **session-management suite** covering configurable idle/absolute timeouts, user-level whitelisting, and active session termination — direct compliance controls without support intervention.',
@@ -44,6 +51,7 @@ export const experience = [
       {
         heading: 'AI-Augmented Engineering',
         bullets: [
+          'Built a **RAG-based Slack support bot** over internal docs and ticket history, answering questions across the full auth domain (RBAC, SSO, SCIM, OAuth) for Contentstack\'s support team — live in production.',
           'Integrated AI across the software delivery lifecycle, applying Claude Code, GPT, and GitHub Copilot to development, pre-review, test generation, debugging, merge-conflict resolution, incident RCA, and security analysis.',
           'Contributed to a **2–3× increase in PRs per sprint** while improving automated test coverage **from 75% to 85%+**, increasing engineering throughput without proportional headcount growth.',
           'Authored the **AGENT.md/SKILLS.md and cross-repo agent-navigation docs** mapping features and flows to exact files, and a feature-wise prompt/playbook library (RCA, test generation, conflict resolution) that **cut bug turnaround from 2–3 days to a single day** with the fix ready.',

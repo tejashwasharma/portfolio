@@ -93,6 +93,8 @@ export const skillGroups = [
       'Claude Code',
       'GPT',
       'GitHub Copilot',
+      'RAG',
+      'LLM-Backed Bots',
       'AI Code Review',
       'AI Test Generation',
       'AI Debugging',
