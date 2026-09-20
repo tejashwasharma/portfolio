@@ -79,7 +79,7 @@ function Role({ role }) {
 export function Experience() {
   return (
     <Section id="experience" eyebrow="// experience.log" title="Experience">
-      <Accordion variant="separated" defaultValue={experience[0]?.company}>
+      <Accordion variant="separated" allowMultiple defaultValue={experience.map((role) => role.company)}>
         {experience.map((role) => (
           <Role key={role.company} role={role} />
         ))}
