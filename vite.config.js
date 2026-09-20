@@ -16,5 +16,17 @@ export default defineConfig(({ mode }) => ({
   build: {
     outDir: 'dist',
     sourcemap: false,
+    // styled-components/native ships a CJS build with a top-level
+    // require('react-native') that Rollup's default commonjs handling
+    // leaves untransformed in the production bundle (works in dev because
+    // Vite's esbuild pre-bundler handles it differently) — surfaces as a
+    // runtime "require is not defined" crash. Forcing it through esbuild's
+    // dependency pre-bundling avoids that.
+    commonjsOptions: {
+      transformMixedEsModules: true,
+    },
+  },
+  optimizeDeps: {
+    include: ['styled-components/native', 'react-native-web'],
   },
 }));
