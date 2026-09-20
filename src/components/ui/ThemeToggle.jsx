@@ -1,19 +1,19 @@
-import { useTheme } from '../../hooks/useTheme';
-import styles from './ThemeToggle.module.css';
+import { Button, useColorMode } from 'rendr-components';
 
 export function ThemeToggle() {
-  const { theme, toggleTheme } = useTheme();
-  const next = theme === 'dark' ? 'light' : 'dark';
+  const { mode, toggle } = useColorMode();
+  const next = mode === 'dark' ? 'light' : 'dark';
 
   return (
-    <button
-      type="button"
-      className={styles.toggle}
-      onClick={toggleTheme}
-      aria-label={`Switch to ${next} theme`}
-      title={`Switch to ${next} theme`}
+    <Button
+      variant="outline"
+      colorScheme="neutral"
+      size="sm"
+      rounded="full"
+      onPress={toggle}
+      accessibilityLabel={`Switch to ${next} theme`}
     >
-      <span aria-hidden="true">{next === 'light' ? '☀️' : '🌙'}</span>
-    </button>
+      {next === 'light' ? '☀️' : '🌙'}
+    </Button>
   );
 }

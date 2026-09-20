@@ -1,31 +1,34 @@
+import { Grid, VStack, Text } from 'rendr-components';
 import { Section } from '../ui/Section';
 import { education, certifications } from '../../data/credentials';
-import styles from './Credentials.module.css';
 
 export function Credentials() {
   return (
-    <Section
-      id="credentials"
-      eyebrow="// credentials"
-      title="Education & certifications"
-    >
-      <div className={styles.grid}>
-        <div>
-          <h3>Education</h3>
-          <p>
+    <Section id="credentials" eyebrow="// credentials" title="Education & certifications">
+      <Grid columns={{ base: 1, sm: 2 }} gap={5}>
+        <VStack spacing={1.5} align="flex-start">
+          <Text weight="semibold" size="sm">
+            Education
+          </Text>
+          <Text size="sm">
             {education.school} — {education.degree}
-          </p>
-          <p className={styles.sub}>{education.detail}</p>
-        </div>
-        <div>
-          <h3>Certifications</h3>
+          </Text>
+          <Text size="xs" color="textMuted">
+            {education.detail}
+          </Text>
+        </VStack>
+
+        <VStack spacing={1.5} align="flex-start">
+          <Text weight="semibold" size="sm">
+            Certifications
+          </Text>
           {certifications.map((cert) => (
-            <p key={cert.name}>
-              {cert.name} <span className={styles.sub}>({cert.year})</span>
-            </p>
+            <Text key={cert.name} size="sm">
+              {cert.name} <Text color="textMuted">({cert.year})</Text>
+            </Text>
           ))}
-        </div>
-      </div>
+        </VStack>
+      </Grid>
     </Section>
   );
 }

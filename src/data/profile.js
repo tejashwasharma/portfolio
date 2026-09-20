@@ -38,9 +38,9 @@ export const quickFacts = [
   { term: 'Focus', value: 'Backend · Platform Engineering · IAM' },
   { term: 'Experience', value: '7+ years' },
   { term: 'Auth scale', value: '2–3B requests / day' },
-  { term: 'Core', value: 'RBAC, OAuth2, SAML, OIDC, SCIM, OPA/Rego' },
+  { term: 'Core', value: 'System Design, Distributed Systems, RBAC, OAuth2, SAML, OIDC, SCIM, OPA/Rego' },
   { term: 'Based in', value: 'Agra, India' },
-  { term: 'Status', value: 'Open to senior & architect roles' },
+  { term: 'Status', value: 'Open to Remote / Relocation' },
 ];
 
 export const summary = {
@@ -63,6 +63,5 @@ export const summary = {
       body: 'Claude Code, GPT, and GitHub Copilot across the SDLC for development velocity, code quality, testing, debugging, RCA, and security analysis; built a RAG-based Slack support bot answering auth/RBAC/SSO questions, live with the internal support team; contributed to 2–3× PR throughput and 85%+ test coverage, alongside React.js, TypeScript, CI/CD, Docker, and Jenkins.',
     },
   ],
-  closing:
-    'Currently targeting senior software engineering, technical architect, and technical manager roles — to lead architecture and technology strategy, drive engineering excellence, and deliver product modernisation.',
+  closing: 'Open to remote work and relocation, with a continued focus on architecture, platform, and identity engineering.',
 };

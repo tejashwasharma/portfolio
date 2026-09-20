@@ -1,39 +1,46 @@
+import { Box, Grid, Card, VStack, Text } from 'rendr-components';
 import { Section } from '../ui/Section';
 import { interests, instagram } from '../../data/interests';
-import styles from './Interests.module.css';
 
 export function Interests() {
   return (
     <Section id="interests" eyebrow="// off-the-clock" title="Off the clock">
-      <div className={styles.grid}>
+      <Grid columns={{ base: 1, sm: 2 }} gap={3}>
         {interests.map((interest) => (
-          <div key={interest.title}>
-            <h3>{interest.title}</h3>
-            <p>
-              {interest.body}
-              {interest.link ? (
-                <>
-                  {' '}
-                  Work lives at{' '}
-                  <a href={interest.link.href} target="_blank" rel="noopener noreferrer">
-                    {interest.link.label}
-                  </a>
-                  .
-                </>
-              ) : null}
-            </p>
-          </div>
+          <Card key={interest.title} variant="outline" padding={4}>
+            <VStack spacing={1.5} align="flex-start">
+              <Text weight="semibold" size="sm">
+                {interest.title}
+              </Text>
+              <Text size="sm" color="textMuted" lineHeight="relaxed">
+                {interest.body}
+                {interest.link ? (
+                  <>
+                    {' '}
+                    Work lives at{' '}
+                    <Text href={interest.link.href} hrefAttrs={{ target: '_blank', rel: 'noopener noreferrer' }} color="primary">
+                      {interest.link.label}
+                    </Text>
+                    .
+                  </>
+                ) : null}
+              </Text>
+            </VStack>
+          </Card>
         ))}
-      </div>
+      </Grid>
 
-      <a
-        className={styles.igLink}
-        href={instagram.href}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Instagram · {instagram.handle} ↗
-      </a>
+      <Box mt={4}>
+        <Text
+          href={instagram.href}
+          hrefAttrs={{ target: '_blank', rel: 'noopener noreferrer' }}
+          font="mono"
+          size="sm"
+          color="primary"
+        >
+          Instagram · {instagram.handle} ↗
+        </Text>
+      </Box>
     </Section>
   );
 }

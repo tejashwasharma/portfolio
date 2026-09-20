@@ -1,22 +1,26 @@
+import { VStack, HStack, Text, Badge } from 'rendr-components';
 import { Section } from '../ui/Section';
 import { skillGroups } from '../../data/skills';
-import styles from './Skills.module.css';
 
 export function Skills() {
   return (
     <Section id="skills" eyebrow="// skills.stack" title="Stack">
-      <div className={styles.grid}>
+      <VStack spacing={5}>
         {skillGroups.map((group) => (
-          <div key={group.title}>
-            <h3 className={styles.groupTitle}>{group.title}</h3>
-            <div className={styles.chips}>
+          <VStack key={group.title} spacing={2}>
+            <Text weight="semibold" size="sm">
+              {group.title}
+            </Text>
+            <HStack spacing={1.5} wrap="wrap">
               {group.items.map((item) => (
-                <span key={item}>{item}</span>
+                <Badge key={item} variant="outline" colorScheme="neutral" size="md" rounded="full" uppercase={false}>
+                  {item}
+                </Badge>
               ))}
-            </div>
-          </div>
+            </HStack>
+          </VStack>
         ))}
-      </div>
+      </VStack>
     </Section>
   );
 }

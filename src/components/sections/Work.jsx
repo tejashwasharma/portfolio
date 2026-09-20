@@ -1,19 +1,27 @@
+import { Grid, Card, VStack, Text, Badge } from 'rendr-components';
 import { Section } from '../ui/Section';
 import { work } from '../../data/work';
-import styles from './Work.module.css';
 
 export function Work() {
   return (
     <Section id="work" eyebrow="// work.selected" title="Selected client work">
-      <div className={styles.cards}>
+      <Grid columns={{ base: 1, md: 2 }} gap={3}>
         {work.map((item) => (
-          <article key={item.name} className={styles.card}>
-            <h3>{item.name}</h3>
-            <p>{item.blurb}</p>
-            <span className={styles.tag}>{item.tag}</span>
-          </article>
+          <Card key={item.name} variant="elevated" padding={4}>
+            <VStack spacing={2} align="flex-start">
+              <Text weight="semibold" size="md">
+                {item.name}
+              </Text>
+              <Text size="sm" color="textMuted" lineHeight="relaxed">
+                {item.blurb}
+              </Text>
+              <Badge variant="subtle" colorScheme="primary" size="sm">
+                {item.tag}
+              </Badge>
+            </VStack>
+          </Card>
         ))}
-      </div>
+      </Grid>
     </Section>
   );
 }

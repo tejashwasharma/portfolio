@@ -31,6 +31,5 @@ export const analyticsReady =
     : Promise.resolve(null);
 
 if (!isConfigured && import.meta.env.DEV) {
-  // eslint-disable-next-line no-console
   console.info('[firebase] no VITE_FIREBASE_* env found — Firebase disabled. Copy .env.example to .env.');
 }
