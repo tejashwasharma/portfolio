@@ -2,7 +2,25 @@
 
 export const skillGroups = [
   {
-    title: 'Identity & Access',
+    title: 'Backend',
+    items: [
+      'Node.js',
+      'NestJS',
+      'Express.js',
+      'Fastify',
+      'Golang',
+      'REST',
+      'GraphQL',
+      'gRPC',
+      'Protobuf',
+      'Socket.io',
+      'Microservices',
+      'Kafka',
+      'RabbitMQ',
+    ],
+  },
+  {
+    title: 'Identity & Access Platform',
     items: [
       'RBAC',
       'OAuth 2.0',
@@ -19,24 +37,6 @@ export const skillGroups = [
       'Okta',
       'Entra ID',
       'Ping Identity',
-    ],
-  },
-  {
-    title: 'Backend',
-    items: [
-      'Node.js',
-      'NestJS',
-      'Express.js',
-      'Fastify',
-      'Golang',
-      'REST',
-      'GraphQL',
-      'gRPC',
-      'Protobuf',
-      'Socket.io',
-      'Microservices',
-      'Kafka',
-      'RabbitMQ',
     ],
   },
   {

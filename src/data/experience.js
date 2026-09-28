@@ -15,7 +15,7 @@ export const experience = [
     ],
     groups: [
       {
-        heading: 'Identity, Access & Authorization',
+        heading: 'Platform & Authorization Engineering',
         bullets: [
           'Transformed the platform from two fixed roles into an **unlimited, multi-product RBAC framework** with granular permission controls, strengthening customer governance and reducing support escalations while becoming a recurring differentiator in enterprise sales.',
           'Architected and shipped the **multi-org invitation and onboarding workflow** for a multi-tenant model where users belong to several organizations, assigning permissions at invitation time and supporting **two product teams** through end-to-end RBAC adoption using **OPA/Rego policy enforcement**.',
