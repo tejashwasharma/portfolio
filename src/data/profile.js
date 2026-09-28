@@ -35,7 +35,7 @@ export const contactLinks = [
 
 export const quickFacts = [
   { term: 'Role', value: 'Senior Software Engineer' },
-  { term: 'Focus', value: 'Platform Engineering · Backend · IAM' },
+  { term: 'Focus', value: 'Backend · Platform Engineering · IAM' },
   { term: 'Experience', value: '7+ years' },
   { term: 'Auth scale', value: '2–3B requests / day' },
   { term: 'Core', value: 'System Design, Distributed Systems, RBAC, OAuth2, SAML, OIDC, SCIM, OPA/Rego' },
@@ -44,24 +44,24 @@ export const quickFacts = [
 ];
 
 export const summary = {
-  lead: 'Senior software engineer with over 7 years architecting and delivering enterprise SaaS platforms, distributed systems, and high-scale backend infrastructure across product environments. Most recently at Contentstack I owned the platform’s RBAC framework and authentication infrastructure end to end — policy design in OPA/Rego, enterprise SSO and SCIM, incident response, and the observability around it.',
+  lead: 'Senior software engineering professional with over 7 years architecting and delivering enterprise SaaS platforms, identity & access management, and distributed systems across high-scale product environments. Most recently at Contentstack I owned the platform’s RBAC framework and authentication infrastructure end to end — policy design in OPA/Rego, enterprise SSO and SCIM, incident response, and the observability around it.',
   facets: [
     {
-      title: 'Backend & platform engineering',
-      body: 'Hands-on with Node.js, NestJS, Golang, GraphQL, gRPC, microservices, MongoDB, PostgreSQL, Redis, and AWS; engineered platform infrastructure supporting 2–3B daily requests with high availability and performance.',
+      title: 'IAM & security architecture',
+      body: 'RBAC, OAuth 2.0, SAML 2.0, OIDC, SCIM, JWT, SSO, OPA and Rego; modernised the authorization architecture into a scalable, multi-product RBAC framework with granular, policy-based access controls.',
     },
     {
-      title: 'Platform architecture',
-      body: 'RBAC, OAuth 2.0, SAML 2.0, OIDC, SCIM, JWT, SSO, OPA and Rego; modernised a core platform capability into a scalable, multi-product framework with granular, policy-based controls consumed by 9+ product teams.',
+      title: 'Backend engineering',
+      body: 'Hands-on with Node.js, NestJS, Golang, GraphQL, gRPC, microservices, MongoDB, PostgreSQL, Redis, and AWS; engineered authentication infrastructure supporting 2–3B daily requests with high availability and performance.',
     },
     {
       title: 'Production & reliability engineering',
-      body: 'Platform-wide initiatives, architecture modernisation, observability, compliance, and SLA excellence; shipped solutions that cleared third-party audits with zero findings, accelerated incident resolution 3×, and cut resolution time ~30%.',
+      body: 'Security-critical enterprise initiatives, architecture modernisation, observability, compliance, and SLA excellence; shipped solutions that cleared third-party audits with zero findings, accelerated incident resolution 3×, and cut resolution time ~30%.',
     },
     {
       title: 'AI-augmented engineering',
       body: 'Claude Code, GPT, and GitHub Copilot across the SDLC for development velocity, code quality, testing, debugging, RCA, and security analysis; built a RAG-based Slack support bot answering auth/RBAC/SSO questions, live with the internal support team; contributed to 2–3× PR throughput and 85%+ test coverage, alongside React.js, TypeScript, CI/CD, Docker, and Jenkins.',
     },
   ],
-  closing: 'Open to remote work and relocation, with a continued focus on architecture, platform, and distributed-systems engineering.',
+  closing: 'Open to remote work and relocation, with a continued focus on architecture, platform, and identity engineering.',
 };
