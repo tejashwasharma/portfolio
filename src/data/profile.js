@@ -2,9 +2,9 @@
 
 export const profile = {
   name: 'Tejashwa Sharma',
-  role: 'Senior Software Engineer · Backend & Platform Engineering',
+  role: 'Senior Software Engineer · Backend & Distributed Systems',
   thesis:
-    'I build authentication and authorization infrastructure that stays fast and audit-clean at billions of requests a day.',
+    'I build backend services and distributed systems that stay fast, reliable and cost-efficient at billions of requests a day.',
   location: 'Agra, India',
   resumeFile: '/tejashwasharma_resume.pdf',
   resumeDownloadName: 'tejashwasharma_resume.pdf',
@@ -35,33 +35,33 @@ export const contactLinks = [
 
 export const quickFacts = [
   { term: 'Role', value: 'Senior Software Engineer' },
-  { term: 'Focus', value: 'Backend · Platform Engineering · IAM' },
+  { term: 'Focus', value: 'Backend · Distributed Systems · Platform Engineering' },
   { term: 'Experience', value: '7+ years' },
-  { term: 'Auth scale', value: '2–3B requests / day' },
-  { term: 'Core', value: 'System Design, Distributed Systems, RBAC, OAuth2, SAML, OIDC, SCIM, OPA/Rego' },
+  { term: 'Scale', value: '2–3B requests / day' },
+  { term: 'Core', value: 'Node.js, NestJS, TypeScript, Microservices, gRPC, Redis, AWS, System Design' },
   { term: 'Based in', value: 'Agra, India' },
-  { term: 'Status', value: 'Open to Remote / Relocation' },
+  { term: 'Status', value: 'Immediate joiner · Open to Remote / Relocation' },
 ];
 
 export const summary = {
-  lead: 'Senior software engineering professional with over 7 years architecting and delivering enterprise SaaS platforms, identity & access management, and distributed systems across high-scale product environments. Most recently at Contentstack I owned the platform’s RBAC framework and authentication infrastructure end to end — policy design in OPA/Rego, enterprise SSO and SCIM, incident response, and the observability around it.',
+  lead: 'Senior software engineer with over 7 years building and scaling backend services, APIs and distributed systems for enterprise SaaS platforms. Most recently at Contentstack I built Node.js and TypeScript backend infrastructure serving 2–3B requests a day, cutting p95 latency from ~6s to under 200ms, shipping shared internal libraries adopted by 9 product teams, and owning production incident response and observability.',
   facets: [
     {
-      title: 'IAM & security architecture',
-      body: 'RBAC, OAuth 2.0, SAML 2.0, OIDC, SCIM, JWT, SSO, OPA and Rego; modernised the authorization architecture into a scalable, multi-product RBAC framework with granular, policy-based access controls.',
-    },
-    {
       title: 'Backend engineering',
-      body: 'Hands-on with Node.js, NestJS, Golang, GraphQL, gRPC, microservices, MongoDB, PostgreSQL, Redis, and AWS; engineered authentication infrastructure supporting 2–3B daily requests with high availability and performance.',
+      body: 'Node.js, NestJS, Express.js, Fastify, TypeScript, REST, GraphQL, gRPC, microservices, MongoDB, PostgreSQL, Redis, Kafka and AWS; designed multi-tenant services and shared libraries that product teams adopt without reimplementing the plumbing.',
     },
     {
-      title: 'Production & reliability engineering',
-      body: 'Security-critical enterprise initiatives, architecture modernisation, observability, compliance, and SLA excellence; shipped solutions that cleared third-party audits with zero findings, accelerated incident resolution 3×, and cut resolution time ~30%.',
+      title: 'Performance, reliability & observability',
+      body: 'Redesigned policy evaluation and Redis caching to cut p95 latency from ~6s to under 200ms at 2–3B requests a day; accelerated incident resolution 3×, cut resolution time ~30%, and reduced Datadog/Observe costs through high-signal logging.',
+    },
+    {
+      title: 'Security & authorization',
+      body: 'Multi-tenant RBAC enforced through OPA/Rego, OAuth 2.0, JWT, SSO and MFA; drove third-party security audits to zero findings and cut open findings from ~150 to 10 in two quarters.',
     },
     {
       title: 'AI-augmented engineering',
-      body: 'Claude Code, GPT, and GitHub Copilot across the SDLC for development velocity, code quality, testing, debugging, RCA, and security analysis; built a RAG-based Slack support bot answering auth/RBAC/SSO questions, live with the internal support team; contributed to 2–3× PR throughput and 85%+ test coverage, alongside React.js, TypeScript, CI/CD, Docker, and Jenkins.',
+      body: 'Claude Code, GPT, and GitHub Copilot across the SDLC for development velocity, code quality, testing, debugging and RCA; built a RAG-based Slack support bot, live with the internal support team; contributed to 2–3× PR throughput and 85%+ test coverage, alongside React.js, TypeScript, CI/CD, Docker, and Jenkins.',
     },
   ],
-  closing: 'Open to remote work and relocation, with a continued focus on architecture, platform, and identity engineering.',
+  closing: 'Immediately available, open to remote work and relocation, for backend and distributed-systems roles in any language or stack.',
 };
